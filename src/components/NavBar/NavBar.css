@@ -1,0 +1,8 @@
+.nav-content {
+    padding: 1em;
+    background-color: aqua;
+}
+
+.nav-content > a {
+    margin-right: 1em;
+}
