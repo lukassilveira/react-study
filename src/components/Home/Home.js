@@ -1,7 +1,9 @@
+import "./Home.css"
+
 const HomeComponent = () => {
     return ( 
         <div className="home">
-            <p>
+            <p className="home-title">
                 Home
             </p>
         </div>
