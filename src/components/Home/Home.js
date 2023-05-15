@@ -1,5 +1,6 @@
 import "./Home.css";
 import { useState } from "react";
+import PostList from "../PostList/PostList";
 
 const HomeComponent = () => {
 	const [posts, setPosts] = useState([
@@ -17,12 +18,7 @@ const HomeComponent = () => {
 		<div className="home w-50 mx-auto">
 			<p className="home-title py-3 text-center">Home</p>
 			<div className="home-content d-flex flex-column">
-				{posts.map((post) => (
-					<div className="post d-flex flex-column align-items-start w-100 mb-5 p-3" key={post.id}>
-						<span className="post-title">{post.title}</span>
-						<span className="post-body">{post.title}</span>
-					</div>
-				))}
+				<PostList posts={posts} />
 			</div>
 		</div>
 	);
