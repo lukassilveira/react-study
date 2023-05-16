@@ -1,7 +1,7 @@
 .post {
-    cursor: pointer;
-    background-color: white;
-    border-radius: 10px;
+	cursor: pointer;
+	background-color: white;
+	border-radius: 10px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -17,4 +17,8 @@
 .post-body {
 	font-size: 30px;
 	color: dimgray;
+}
+
+.delete-button {
+	color: red !important;
 }
