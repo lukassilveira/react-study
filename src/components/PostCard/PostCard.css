@@ -19,6 +19,10 @@
 	color: dimgray;
 }
 
+.post-author{
+	font-size: 16px;
+}
+
 .delete-button {
 	color: red !important;
 }
