@@ -1,10 +1,6 @@
 import { useState } from "react";
 import PostCard from "../PostCard/PostCard";
 
-const deletePost = (e, id) => {
-	console.log(id);
-	e.stopPropagation();
-};
 
 const PostList = () => {
 	const [posts, setPosts] = useState([
@@ -17,6 +13,12 @@ const PostList = () => {
 			id: 3,
 		},
 	]);
+
+	const deletePost = (e, id) => {
+		var newPosts = posts.filter(post => post.id !== id);
+		setPosts(newPosts);
+	};
+	
 	return (
 		<div className="post-list">
 			{posts.map((post) => (

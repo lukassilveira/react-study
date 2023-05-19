@@ -10,7 +10,7 @@ const PostCard = ({ id, title, author, body, deletePost }) => {
 				<button className="btn btn-light delete-button" onClick={(e) => {deletePost(e, id)}}>Delete</button>
 			</div>
 			<div className="post-body d-flex w-100 align-items-center justify-content-between">
-				<span className="post-title">{body}</span>
+				<span className="post-body">{body}</span>
 				<span className="post-author">Written by {author}</span>
 			</div>
 		</div>
